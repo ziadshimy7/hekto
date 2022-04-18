@@ -1,0 +1,68 @@
+.hekto__latestProducts {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 42px;
+    line-height: 49px;
+    color: #151875;
+    margin-bottom: 3rem;
+  }
+  .hekto__filter-container {
+    display: flex;
+    list-style: none;
+    li {
+      padding: 1rem 1.75rem;
+      cursor: pointer;
+      font-family: "Lato";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #151875;
+      &:hover {
+        color: #fb2e86;
+        text-decoration: underline;
+      }
+    }
+  }
+  .hekto__products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 90%;
+    margin-top: 3rem;
+    .hekto__product-item {
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      .hekto__product-img {
+        background: #f7f7f7;
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 223px;
+          height: 229px;
+        }
+      }
+      .hekto_product-info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        h6 {
+          font-size: 16px;
+          line-height: 19px;
+          color: #151875;
+          border-bottom: 3px solid #eeeffb;
+        }
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          color: #fb2448;
+        }
+      }
+    }
+  }
+}

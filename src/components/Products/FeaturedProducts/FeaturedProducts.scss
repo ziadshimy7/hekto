@@ -1,0 +1,114 @@
+.hekto__featuredProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  h2 {
+    font-size: 42px;
+    line-height: 49px;
+    color: #1a0b5b;
+  }
+  .hekto__products-container {
+    display: flex;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    list-style-type: none;
+    .hekto__featuredProduct {
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      &:hover {
+        .hekto__details-btn {
+          opacity: 1;
+        }
+        .hekto__product-image {
+          img {
+            transform: scale(0.8) translateY(-15px);
+          }
+        }
+        .hekto__product-info {
+          background-color: #2f1ac4;
+          h5,
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .hekto__product-image {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      background: #f7f7f7;
+      padding: 1rem 3rem;
+      img {
+        width: 11rem;
+        height: 11rem;
+        transition: all 0.7s ease-in-out;
+      }
+    }
+    .hekto__product-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      background-color: #fff;
+      padding: 1rem 0;
+      position: relative;
+      .hekto__details-btn {
+        position: absolute;
+        top: -36px;
+        opacity: 0;
+        background: #08d15f;
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 14px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        color: #ffffff;
+        transition: opacity 0.5s ease-in-out;
+        font-family: "Josefin Sans";
+      }
+      h5 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 22px;
+        color: #fb2e86;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 16px;
+        color: #151875;
+      }
+    }
+    @media screen and (max-width: 1150px) {
+      gap: 1rem;
+    }
+  }
+  .hekto__featuredProducts-pagination_container {
+    margin-top: 4rem;
+    display: flex;
+    gap: 0.3rem;
+    .hekto__pagination-link {
+      width: 16px;
+      height: 4px;
+      background: #febad7;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .hekto__pagination-link.active {
+      width: 24px;
+      background: #fb2e86;
+    }
+  }
+}

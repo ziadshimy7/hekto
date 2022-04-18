@@ -1,0 +1,95 @@
+.hekto__uniqueFeature {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background: #f1f0ff;
+  width: 100%;
+  .hekto__uniqueFeatures-img_container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    .hekto__uniqueFeatures-img {
+      position: relative;
+      .hekto__sofaImage {
+        width: 500px;
+        height: 550px;
+        position: relative;
+        z-index: 1;
+      }
+      .hekto__blobImage {
+        position: absolute;
+        left: -8%;
+        top: 7%;
+      }
+    }
+  }
+  .hekto__uniqueFeatures-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+    h2 {
+      font-family: "Josefin Sans";
+      font-size: 35px;
+      line-height: 132%;
+      letter-spacing: 0.015em;
+      color: #151875;
+    }
+    ul {
+      list-style: none;
+      li {
+        padding: 0.8rem;
+        p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 132%;
+          letter-spacing: 0.015em;
+          color: #acabc3;
+          max-width: 53ch;
+        }
+        p::before {
+          content: "\2022";
+          color: red;
+          font-size: 1.2rem;
+          font-weight: bold;
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          margin-left: -1rem;
+        }
+      }
+    }
+    .hekto__uniqueFeatures-content_cta {
+      display: flex;
+      align-items: center;
+      button,
+      p {
+        padding: 0.75rem 2rem;
+      }
+      button {
+        background: #fb2e86;
+        border-radius: 2px;
+        font-family: "Josefin Sans";
+        font-size: 1rem;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+      }
+      p {
+        font-family: "Josefin Sans";
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.02em;
+        color: #151875;
+      }
+    }
+  }
+}

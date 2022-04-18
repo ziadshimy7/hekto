@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as Header } from "./Header/Header";
+export { default as Brands } from "./Brands/Brand";
+export { default as DiscountItem } from "./DiscountItem/DiscountItem";
+export { default as Footer } from "./Footer/Footer";
+export { default as Products } from "./Products/Products.tsx";
+export { default as Offers } from "./Offers/Offers";
+export { default as TopCategories } from "./TopCategories/TopCategories";
+export { default as TrendingProducts } from "./TrendingProducts/TrendingProducts";
+export { default as UniqueFeatures } from "./UniqueFeature/UniqueFeatures";
